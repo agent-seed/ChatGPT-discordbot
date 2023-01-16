@@ -1,0 +1,29 @@
+{
+  "name": "chat-gpt-discordbot",
+  "version": "1.0.0",
+  "description": "A simple interface for chatGPT using a discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agent-seed/ChatGPT-discordbot.git"
+  },
+  "keywords": [
+    "chatgpt",
+    "discord.js",
+    "discordbot",
+    "openai"
+  ],
+  "author": "Agentseed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agent-seed/ChatGPT-discordbot/issues"
+  },
+  "homepage": "https://github.com/agent-seed/ChatGPT-discordbot#readme",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3"
+  }
+}
