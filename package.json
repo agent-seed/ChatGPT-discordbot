@@ -24,6 +24,7 @@
   "homepage": "https://github.com/agent-seed/ChatGPT-discordbot#readme",
   "dependencies": {
     "discord.js": "^14.7.1",
+    "discord.js-commando": "^0.12.3",
     "dotenv": "^16.0.3",
     "xhr2": "^0.2.1"
   }

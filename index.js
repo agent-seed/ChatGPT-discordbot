@@ -3,7 +3,7 @@ const path = require('node:path');
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
 const { token } = require('./config.json');
 
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+// const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 client.commands = new Collection();
 const commandsPath = path.join(__dirname, 'commands');
@@ -33,5 +33,18 @@ client.on(Events.InteractionCreate, async interaction => {
 		await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
 	}
 });
+
+const { CommandoClient } = require('discord.js-commando');
+const client = new CommandoClient();
+client.registry
+      .registerDefaultTypes()
+      .registerGroups([
+            ['group1', 'Group 1'],
+            ['group2', 'Group 2'],
+      ])
+      .registerCommands([
+            ChatCommand
+      ]);
+
 
 client.login(token);
